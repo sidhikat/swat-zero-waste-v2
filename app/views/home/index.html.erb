@@ -1,0 +1,30 @@
+<!-- <div class="parallax-container">
+  Hello
+  <div class="parallax">
+    <<%= image_tag "duck.jpg", :class => "ducks" %>
+  </div>
+  Swat Zero Waste!
+
+</div> -->
+
+<div class="parallax-container">
+      <div class="parallax">
+        yo whats wrong
+        <%= image_tag "duck.jpg", :class => "ducks" %>
+      </div>
+    </div>
+    <div class="section white">
+      <div class="row container">
+        <h2 class="header">Hello!</h2>
+        <p class="grey-text text-darken-3 lighten-3">Swat Zero Waste!</p>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="/duck.jpg"></div>
+    </div>
+
+<script>
+  $(document).on('turbolinks:load', function() {
+    $('.parallax').parallax();
+  });
+</script>
