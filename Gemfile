@@ -29,6 +29,9 @@ gem 'jbuilder', '~> 2.5'
 #Use rack-cors for file uploads
 gem 'rack-cors', require: 'rack/cors'
 
+#Use carrierwave; also for file uploads
+gem 'carrierwave', '~> 1.0'
+
 #Using materialize
 gem 'materialize-sass', '~> 1.0.0'
 
