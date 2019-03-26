@@ -21,6 +21,19 @@ class PostersController < ApplicationController
     end
   end
 
+  def edit
+    @poster = Poster.find(params[:id])
+  end
+
+  def update
+    @poster = Poster.find(params[:id])
+    if @poster.update(poster_params)
+      redirect_to poster_path(@poster)
+    else
+      render 'edit'
+    end
+  end
+
   private
     def poster_params
       params.require(:poster).permit(:event, :title, :description, :feature, :picture)

@@ -21,6 +21,19 @@ class BiographiesController < ApplicationController
     end
   end
 
+  def edit
+    @biography = Biography.find(params[:id])
+  end
+
+  def update
+    @essay = Essay.find(params[:essay_id])
+    if @biography.update(biography_params)
+      redirect_to biography_path(@biography)
+    else
+      render 'edit'
+    end
+  end
+
   private
     def biography_params
       params.require(:biography).permit(:name, :year, :bio, :picture)

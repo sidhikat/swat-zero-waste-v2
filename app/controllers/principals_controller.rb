@@ -25,6 +25,19 @@ class PrincipalsController < ApplicationController
     end
   end
 
+  def edit
+    @principal = Principal.find(params[:id])
+  end
+
+  def update
+    @principal = Principal.find(params[:id])
+    if @principal.update(principal_params)
+      redirect_to principal_path(@principal)
+    else
+      render 'edit'
+    end
+  end
+
   private
     def principal_params
       params.require(:principal).permit(:title, :description, :picture)

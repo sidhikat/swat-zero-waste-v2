@@ -19,9 +19,24 @@ class ImagesController < ApplicationController
     @gallery = Gallery.find(params[:essay_id])
     @image = @gallery.images.new(image_params)
     if @image.save
-      redirect_to gallery_image_path(@image)
+      redirect_to gallery_image_path(@gallery, @image)
     else
       render 'new'
+    end
+  end
+
+  def edit
+    @gallery = Gallery.find(params[:essay_id])
+    @image = @gallery.images.find(params[:id])
+  end
+
+  def update
+    @gallery = Gallery.find(params[:essay_id])
+    @image = @gallery.images.find(params[:id])
+    if @image.update(image_params)
+      redirect_to gallery_image_path(@gallery, @image)
+    else
+      render 'edit'
     end
   end
 
