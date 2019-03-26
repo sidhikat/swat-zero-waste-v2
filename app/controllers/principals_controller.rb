@@ -38,6 +38,13 @@ class PrincipalsController < ApplicationController
     end
   end
 
+  def destroy
+    @principal = Principal.find(params[:id])
+    @principal.destroy
+
+    redirect_to principals_path
+  end
+
   private
     def principal_params
       params.require(:principal).permit(:title, :description, :picture)

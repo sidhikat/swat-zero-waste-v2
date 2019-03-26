@@ -34,6 +34,13 @@ class PostersController < ApplicationController
     end
   end
 
+  def destroy
+    @poster = Poster.find(params[:id])
+    @poster.destroy
+
+    redirect_to posters_path
+  end
+
   private
     def poster_params
       params.require(:poster).permit(:event, :title, :description, :feature, :picture)

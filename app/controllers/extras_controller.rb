@@ -34,6 +34,13 @@ class ExtrasController < ApplicationController
     end
   end
 
+  def destroy
+    @extra = Extra.find(params[:id])
+    @extra.destroy
+
+    redirect_to extras_path
+  end
+
   private
     def extra_params
       params.require(:extra).permit(:title, :description)

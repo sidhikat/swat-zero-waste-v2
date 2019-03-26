@@ -40,6 +40,14 @@ class ImagesController < ApplicationController
     end
   end
 
+  def destroy
+    @gallery = Gallery.find(params[:essay_id])
+    @image = @gallery.images.find(params[:id])
+    @image.destroy
+
+    redirect_to gallery_path(@gallery)
+  end
+
   private
     def image_params
       params.require(:image).permit(:caption, :feature, :picture)

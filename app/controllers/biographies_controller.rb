@@ -34,6 +34,13 @@ class BiographiesController < ApplicationController
     end
   end
 
+  def destroy
+    @biography = Biography.find(params[:id])
+    @biography.destroy
+
+    redirect_to biographies_path
+  end
+
   private
     def biography_params
       params.require(:biography).permit(:name, :year, :bio, :picture)
