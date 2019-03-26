@@ -12,6 +12,10 @@ class PrincipalsController < ApplicationController
     @principal = Principal.find(params[:id])
   end
 
+  def new
+    @principal = Principal.new
+  end
+
   private
     def principal_params
       params.require(:principal).permit(:title, :description, :picture)

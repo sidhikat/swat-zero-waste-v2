@@ -8,6 +8,10 @@ class PostersController < ApplicationController
     @poster = Poster.find(params[:id])
   end
 
+  def new
+    @poster = Poster.new
+  end
+
   private
     def poster_params
       params.require(:poster).permit(:event, :title, :description, :feature, :picture)
