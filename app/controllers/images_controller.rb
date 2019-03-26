@@ -15,6 +15,16 @@ class ImagesController < ApplicationController
     @image = @gallery.images.new
   end
 
+  def create
+    @gallery = Gallery.find(params[:essay_id])
+    @image = @gallery.images.new(image_params)
+    if @image.save
+      redirect_to gallery_image_path(@image)
+    else
+      render 'new'
+    end
+  end
+
   private
     def image_params
       params.require(:image).permit(:caption, :feature, :picture)

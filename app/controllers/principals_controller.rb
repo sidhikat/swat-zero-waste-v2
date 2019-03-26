@@ -16,6 +16,15 @@ class PrincipalsController < ApplicationController
     @principal = Principal.new
   end
 
+  def create
+    @principal = Principal.new(principal_params)
+    if @principal.save
+      redirect_to principal_path(@principal)
+    else
+      render 'new'
+    end
+  end
+
   private
     def principal_params
       params.require(:principal).permit(:title, :description, :picture)

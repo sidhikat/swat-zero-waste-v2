@@ -12,6 +12,15 @@ class PostersController < ApplicationController
     @poster = Poster.new
   end
 
+  def create
+    @poster = Poster.new(poster_params)
+    if @poster.save
+      redirect_to poster_path(@poster)
+    else
+      render 'new'
+    end
+  end
+
   private
     def poster_params
       params.require(:poster).permit(:event, :title, :description, :feature, :picture)
