@@ -8,6 +8,10 @@ class PrincipalsController < ApplicationController
     @principals = Principal.all
   end
 
+  def show
+    @principal = Principal.find(params[:id])
+  end
+
   private
     def principal_params
       params.require(:principal).permit(:title, :description, :picture)
