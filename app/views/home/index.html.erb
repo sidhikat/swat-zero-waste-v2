@@ -25,7 +25,7 @@
 <div class="parallax-container">
       <div class="parallax">
         yo whats wrong
-        <%= image_tag("app/assets/images/duck.jpg", :class => "ducks")%>
+        <%= image_tag("duck.jpg", :class => "ducks")%>
       </div>
     </div>
     <div class="section white">
@@ -39,7 +39,6 @@
     </div>
 
 <script>
-    $(document).ready(function(){
-      $('.parallax').parallax();
-    });
+  $('.parallax').parallax();
+  $(".dropdown-trigger").dropdown();
 </script>
