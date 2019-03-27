@@ -7,6 +7,22 @@
 
 </div> -->
 
+
+<nav>
+  <div class="nav-wrapper">
+    <a href="/home/index" class="brand-logo"><img src="https://media.tenor.co/images/6b0a335af3ab919121965caac9cf5e64/raw" style="width:90px;height:60px;">SWARTHMORE ZERO WASTE</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="/home/index">HOME</a></li>
+      <li><a class="dropdown-trigger" data-target="dropdown1">Our Story<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="">PROJECTS</a></li>
+      <li><a href="">ART</a></li>
+      <li><a href="">EVENTS</a></li>
+      <li><a href="">CONTACT US</a></li>
+    </ul>
+  </div>
+</nav>
+
+
 <div class="parallax-container">
       <div class="parallax">
         yo whats wrong
@@ -27,4 +43,7 @@
   $(document).on('turbolinks:load', function() {
     $('.parallax').parallax();
   });
+  $( document ).ready(function() {
+    $(".dropdown-trigger").dropdown();
+});
 </script>
