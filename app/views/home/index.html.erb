@@ -22,11 +22,10 @@
   </div>
 </nav>
 
-
 <div class="parallax-container">
       <div class="parallax">
         yo whats wrong
-        <%= image_tag "duck.jpg", :class => "ducks" %>
+        <%= image_tag("app/assets/images/duck.jpg", :class => "ducks")%>
       </div>
     </div>
     <div class="section white">
@@ -40,10 +39,8 @@
     </div>
 
 <script>
-  $(document).on('turbolinks:load', function() {
-    $('.parallax').parallax();
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems, options);
   });
-  $( document ).ready(function() {
-    $(".dropdown-trigger").dropdown();
-});
 </script>

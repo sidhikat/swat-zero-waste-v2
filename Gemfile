@@ -26,6 +26,9 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+#using jquery for materialize
+gem 'jquery-rails'
+
 #Use rack-cors for file uploads
 gem 'rack-cors', require: 'rack/cors'
 
