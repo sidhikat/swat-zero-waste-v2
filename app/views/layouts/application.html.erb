@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SwatZeroWaste</title>
+    <title>SyncUpforZeroWaste</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,22 +11,31 @@
 
   <body>
     <ul id="dropdown1" class="dropdown-content">
-      <li><a href="#!">one</a></li>
-      <li><a href="#!">two</a></li>
-      <li class="divider"></li>
-      <li><a href="#!">three</a></li>
+      <li><a href="#!">MISSION</a></li>
+      <li><a href="#!">VALUES</a></li>
+      <!-- <li class="divider"></li> -->
+      <li><a href="#!">BIOGRAPHIES</a></li>
     </ul>
+
+    <body>
+      <ul id="dropdown2" class="dropdown-content">
+        <li><a href="#!">BYOU</a></li>
+        <li><a href="#!">Terracycle</a></li>
+        <!-- <li class="divider"></li> -->
+        <li><a href="#!">Break Free from the Plastic</a></li>
+        <li><a href="#!">Butterfiles and the Bees</a></li>
+      </ul>
 
     <nav>
       <div class="nav-wrapper">
-        <a href="/home/index" class="brand-logo"><%= image_tag "logo.gif", :style => "width:90px;height:60px;"%>SWARTHMORE ZERO WASTE</a>
+        <a href="/home/index" class="brand-logo"><%= image_tag "logo.gif", :style => "width:60px;height:60px;"%>SYNC UP FOR ZERO WASTE</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="/home/index">HOME</a></li>
-          <li><a class="dropdown-trigger" data-target="dropdown1">Our Story<i class="material-icons right">arrow_drop_down</i></a></li>
-          <li><a href="">PROJECTS</a></li>
-          <li><a href="">ART</a></li>
-          <li><a href="">EVENTS</a></li>
-          <li><a href="">CONTACT US</a></li>
+          <li><a class="dropdown-trigger" data-target="dropdown1">OUR STORY<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a href="/project/index" class="dropdown-trigger" data-target="dropdown2">PODS<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a href="/">ART</a></li>
+          <li><a href="">PARTIES</a></li>
+          <li><a href="">SYNC UP</a></li>
         </ul>
       </div>
     </nav>
@@ -36,5 +45,5 @@
   <script>
     $(".dropdown-trigger").dropdown();
   </script>
-  
+
 </html>
