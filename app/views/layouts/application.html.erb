@@ -19,7 +19,7 @@
 
     <body>
       <ul id="dropdown2" class="dropdown-content">
-        <li><%= link_to "Pods", projects_path, class:"pods"%>BYOU</li>
+        <li><%= link_to projects_path do%>BYOU<%end%></li>
         <li><a href="#!">Terracycle</a></li>
         <!-- <li class="divider"></li> -->
         <li><a href="#!">Break Free from the Plastic</a></li>
@@ -32,7 +32,9 @@
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="/home/index">HOME</a></li>
           <li><a class="dropdown-trigger" data-target="dropdown1">OUR STORY<i class="material-icons right">arrow_drop_down</i></a></li>
-          <li><a href="/projects/index" class="dropdown-trigger" data-target="dropdown2">PODS<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><%= link_to projects_path, class: "dropdown-trigger", 'data-target'=>"dropdown2" do%>
+            PODS<i class="material-icons right">arrow_drop_down</i>
+            <%end%></li>
           <li><a href="/">ART</a></li>
           <li><a href="">PARTIES</a></li>
           <li><a href="">SYNC UP</a></li>
@@ -43,7 +45,7 @@
   </body>
 
   <script>
-    $(".dropdown-trigger").dropdown();
+    $(".dropdown-trigger").dropdown({hover:true});
   </script>
 
 </html>
