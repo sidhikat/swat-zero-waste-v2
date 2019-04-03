@@ -2,4 +2,19 @@
 
 <!-- to see this page, go to: http://localhost:8000/galleries -->
 
-hi i am an index
+<h1>Our top photos! </h1>
+
+<div class="carousel">
+    <a class="carousel-item" href="#one!"><%= image_tag"duck.jpg", :style => "width:400px; height: auto;"%> <!-- :style => "width:100px;height:auto;" -->
+    <a class="carousel-item" href="#two!"><%= image_tag"clothesswap.JPG", :style => "width:400px; height: auto;" %>
+    <a class="carousel-item" href="#three!"><%= image_tag"moonevent.JPG", :style => "width:400px; height: auto;" %>
+    <a class="carousel-item" href="#four!"><%= image_tag"crumclean.jpeg", :style => "width:400px; height: auto;" %>
+    <a class="carousel-item" href="#five!"><%= image_tag"duck.jpg", :style => "width:400px; height: auto;" %>
+    
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('.carousel').carousel();
+    });
+</script>
