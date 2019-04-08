@@ -12,9 +12,9 @@
   <body>
     <ul id="dropdown1" class="dropdown-content">
       <li><a href="#!">MISSION</a></li>
-      <li><a href="#!">VALUES</a></li>
+      <li><%=link_to principals_path do%>VALUES<%end%></li>
       <!-- <li class="divider"></li> -->
-      <li><a href="#!">BIOGRAPHIES</a></li>
+      <li><%=link_to biographies_path do%>BIOGRAPHIES<%end%></li>
     </ul>
 
     <body>
@@ -36,8 +36,8 @@
           <li><%= link_to projects_path, class: "dropdown-trigger", 'data-target'=>"dropdown2" do%>
             PODS<i class="material-icons right">arrow_drop_down</i>
             <%end%></li>
-          <li><a href="/">ART</a></li>
-          <li><a href="">PARTIES</a></li>
+          <li><%=link_to galleries_path do%>ART<%end%></li>
+          <li><%=link_to posters_path do%>PARTIES<%end%>
           <li><a href="">SYNC UP</a></li>
         </ul>
       </div>
