@@ -7,11 +7,24 @@
   width: 500px !important;
 }
 
-
-.nav-wrapper{
-  background-color: transparent !important;
-  font-family:courier;
+.section-white{
+  background-color: clear !important;
+  height: auto;
 }
+
+.block {
+  display: block;
+  background-color: green ;
+  border: none;
+  width: 100%;
+  color: white;
+  padding: 14px 28px;
+  text-align: center;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
 html,body{
   height:100%;
 }

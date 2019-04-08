@@ -18,3 +18,12 @@
 
   @import 'materialize';
   @import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+  .nav-wrapper{
+    background-color: transparent !important;
+    font-family:courier;
+  }
+
+  #dropdown2{
+    width:auto !important;
+  }
