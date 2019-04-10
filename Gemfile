@@ -11,7 +11,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 # NOTE: sass always yells at me because it's deprecated but like... it's the
 # only thing that works with materialize? --LP
-gem 'sass-rails', '~> 5.0'
+#gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -35,9 +35,6 @@ gem 'rack-cors', require: 'rack/cors'
 
 #Use carrierwave; also for file uploads
 gem 'carrierwave', '~> 1.0'
-
-#Using materialize
-gem 'materialize-sass', '~> 1.0.0'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
