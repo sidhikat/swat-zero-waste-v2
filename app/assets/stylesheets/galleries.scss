@@ -2,8 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.header-center{
+.center{
     text-align: center;
+    margin: auto;
+}
+
+.gallery-header{
+    padding-left: 15px;
+    font-family: courier;
+}
+
+.gallery {
+    border: 5px; //does this work
+    size: 200px !important;
 }
 
 
