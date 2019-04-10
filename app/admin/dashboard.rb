@@ -12,17 +12,18 @@ ActiveAdmin.register_page "Dashboard" do
 
     # Here is an example of a simple dashboard with columns and panels.
     #
-    # columns do
-    #   column do
-    #     panel "Recent Posts" do
-    #       ul do
-    #         Post.recent(5).map do |post|
-    #           li link_to(post.title, admin_post_path(post))
-    #         end
-    #       end
-    #     end
-    #   end
-
+     columns do
+       column do
+         panel "Pods" do
+           ul do
+             Project.all do |project|
+               li link_to(project.title, admin_project_path(project))
+             end
+            li link_to("New Pod!", new_admin_project_path)
+           end
+         end
+       end
+      end
     #   column do
     #     panel "Info" do
     #       para "Welcome to ActiveAdmin."
