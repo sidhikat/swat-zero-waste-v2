@@ -15,12 +15,12 @@ ActiveAdmin.register_page "Dashboard" do
      columns do
        column do
          panel "Pods" do
-           ul do
-             Project.all do |project|
-               li link_to(project.title, admin_project_path(project))
-             end
-            li link_to("New Pod!", new_admin_project_path)
-           end
+           # ul do
+           #   Pod.all do |pod|
+           #     li link_to(pod.title, admin_pod_path(pod))
+           #   end
+            li link_to("New Pod!", new_admin_pod_path)
+           # end
          end
        end
       end
