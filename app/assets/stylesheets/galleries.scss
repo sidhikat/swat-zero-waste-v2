@@ -8,14 +8,15 @@
     font-family: courier;
     color: white;
     font-size: 24px;
+    text-align: center;
 }
 
 .gallery {
-    border: 5px; //does this work
-    size: 200px !important;
+    width: 800px !important;
+    height: auto !important;
     margin: auto !important;
     text-align: center !important;
-    padding-left: 100px !important;
+    //padding-left: 100px !important;
 }
 
 .gallery-body{
