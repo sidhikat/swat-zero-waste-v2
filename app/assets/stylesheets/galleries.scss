@@ -2,20 +2,25 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.center{
-    text-align: center;
-    margin: auto;
-}
-
 .gallery-header{
+    padding-top: 15px;
     padding-left: 15px;
     font-family: courier;
+    color: white;
+    font-size: 24px;
 }
 
 .gallery {
     border: 5px; //does this work
     size: 200px !important;
+    margin: auto !important;
+    text-align: center !important;
+    padding-left: 100px !important;
 }
 
+.gallery-body{
+    background-color: rgba(169, 169, 169, 0.65);
+
+}
 
   

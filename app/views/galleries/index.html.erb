@@ -2,7 +2,8 @@
 
 <!-- to see this page, go to: http://localhost:8000/galleries -->
 
-<h4 class="gallery-header">Our top photos! </h1>
+<div class="gallery-body">
+    <h4 class="gallery-header">Our top photos! </h1>
 
 <!-- 
 <div class="carousel">
@@ -30,25 +31,26 @@
 
 </script>  -->
 
-<!-- 1. Link to jQuery (1.8 or later), -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+    <!-- 1. Link to jQuery (1.8 or later), -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
 
-<!-- fotorama.css & fotorama.js. -->
-<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+    <!-- fotorama.css & fotorama.js. -->
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
 
-<!-- 2. Add images to <div class="fotorama"></div>. -->
-<div class="fotorama gallery center">
-    <%= image_tag"/app/assets/images/clothesswap.JPG" %>
-    <%= image_tag"/app/assets/images/moonevent.JPG" %>
-    <%= image_tag"/app/assets/images/crumclean.JPG" %>
-    <!-- 
-    <img src="/assets/images/clothesswap.jpg" alt="clothes swap">
-    <img src="/assets/images/moonevent.JPG" alt="moon event party">
-    <img src="/assets/images/crumclean.jpeg" alt="crum clean-up"> -->
-    <img src="/app/assets/images/clothesswap.JPG">
-    <img src="http://s.fotorama.io/1.jpg">
-    <img src="http://s.fotorama.io/2.jpg">
+    <!-- 2. Add images to <div class="fotorama"></div>. -->
+    <div class="fotorama gallery">
+        <%= image_tag"/app/assets/images/clothesswap.JPG" %>
+        <%= image_tag"/app/assets/images/moonevent.JPG" %>
+        <%= image_tag"/app/assets/images/crumclean.JPG" %>
+        <!-- 
+        <img src="/assets/images/clothesswap.jpg" alt="clothes swap">
+        <img src="/assets/images/moonevent.JPG" alt="moon event party">
+        <img src="/assets/images/crumclean.jpeg" alt="crum clean-up"> -->
+        <img src="/app/assets/images/clothesswap.JPG">
+        <img src="http://s.fotorama.io/1.jpg">
+        <img src="http://s.fotorama.io/2.jpg">
+    </div>
+
+    <!-- 3. Enjoy! -->
 </div>
-
-<!-- 3. Enjoy! -->
