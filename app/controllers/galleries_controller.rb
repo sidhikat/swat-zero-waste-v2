@@ -6,6 +6,7 @@ class GalleriesController < ApplicationController
 
   def show
     @gallery = Gallery.find(params[:id])
+    @images = @gallery.images.all
   end
 
   def new
@@ -25,7 +26,7 @@ class GalleriesController < ApplicationController
     @gallery = Gallery.find(params[:id])
   end
 
-  def create
+  def update
     @gallery = Gallery.find(params[:id])
     if @gallery.update(gallery_params)
       redirect_to gallery_path(@gallery)

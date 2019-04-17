@@ -3,11 +3,17 @@
 <!-- to see this page, go to: http://localhost:8000/galleries -->
 
 <div class="gallery-body">
-    <h4 class="gallery-header">Our top photos! </h1>
+    <h4 class="gallery-header">Our top photos! </h4>
+<% @galleries.each do |gallery| %>
+  <% gallery.images.each do |image| %>
+    <%= image_tag(image.picture.url.to_s) %>
+  <% end %>
+<% end %>
 
-<!-- 
+<h4> END OF FOR LOOP!!! </h4>
+<!--
 <div class="carousel">
-    <a class="carousel-item"><%= image_tag"duck.jpg", :style => "width:400px; height: auto;" %> 
+    <a class="carousel-item"><%= image_tag"duck.jpg", :style => "width:400px; height: auto;" %>
     <a class="carousel-item"><%= image_tag"clothesswap.JPG", :style => "width:400px; height: auto;" %>
     <a class="carousel-item"><%= image_tag"moonevent.JPG", :style => "width:400px; height: auto;" %>
     <a class="carousel-item"><%= image_tag"crumclean.jpeg", :style => "width:400px; height: auto;" %>
@@ -43,7 +49,7 @@
         <%= image_tag"/app/assets/images/clothesswap.JPG" %>
         <%= image_tag"/app/assets/images/moonevent.JPG" %>
         <%= image_tag"/app/assets/images/crumclean.JPG" %>
-        <!-- 
+        <!--
         <img src="/assets/images/clothesswap.jpg" alt="clothes swap">
         <img src="/assets/images/moonevent.JPG" alt="moon event party">
         <img src="/assets/images/crumclean.jpeg" alt="crum clean-up"> -->
