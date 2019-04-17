@@ -7,29 +7,29 @@
   width: 500px !important;
 }
 
-.nav-wrapper{
-  background-color: transparent !important;
-  font-family:courier;
-}
 
-.section-white{
-  background-color: clear !important;
-  height: auto;
-}
 
-.block {
+.button {
   display: block;
-  background-color: green;
+  background: #CD661D;
   border: none;
-  width: 100%;
   color: white;
   padding: 14px 28px;
   text-align: center;
-  margin: 4px 2px;
   cursor: pointer;
   border-radius: 16px;
+  margin: 40% auto;
+
 }
 
-html,body{
-  height:100%;
+.button:hover{
+  background-color:black;
+}
+
+
+body{
+  background-image: url("home_page.jpeg");
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
 }

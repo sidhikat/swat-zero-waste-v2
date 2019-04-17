@@ -1,16 +1,10 @@
-<div class="parallax-container">
-      <div class="parallax">
-        <%= image_tag"home_page.jpeg", :style => "width:100px;height:auto;"%>
-      </div>
-    </div>
 
-    <div class="section-white">
-      <button type="button" class="block">What we do</button>
-    </div>
-    <div class="parallax-container">
-      <div class="parallax"> <%= image_tag"home_page.jpeg", :style => "width:100px;height:auto;"%></div>
-    </div>
 
-<script>
-  $('.parallax').parallax();
-</script>
+<!-- <%= image_tag"home_page.jpeg", :style => "width:100%;height:auto;"%> -->
+
+<!-- <button class="button">What We Do</button> -->
+
+<%=button_to "What We do", projects_path, :method =>:get, :class=>"button"%>
+
+<!-- <%= button_tag(type: 'button', class:"button") do%>
+  What we do<%end%> -->
