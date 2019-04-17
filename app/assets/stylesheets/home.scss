@@ -11,19 +11,19 @@
 
 .button {
   display: block;
-  background: #CD661D;
+  background: #CD661D !important;
   border: none;
   color: white;
   padding: 14px 28px;
   text-align: center;
   cursor: pointer;
   border-radius: 16px;
-  margin: 40% auto;
-
+  margin: 40% 48% !important;
+  width:5% !important;
 }
 
 .button:hover{
-  background-color:black;
+  background-color:grey;
 }
 
 
@@ -31,5 +31,5 @@ body{
   background-image: url("home_page.jpeg");
   background-size: 100% auto;
   background-position: center top;
-  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
