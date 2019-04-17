@@ -19,28 +19,28 @@
     <body>
 
       <div class="nav-wrapper">
-        <ul>
+        <ul class ="navbar">
           <li><%=image_tag "logo.gif", :style => "width:60px;height:60px;"%></li>
           <li><a href="/home/index" class="brand-logo">
             SYNC UP FOR ZERO WASTE</a></li>
           <li><a href="/home/index">HOME</a></li>
           <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">OUR STORY</a>
-    <div class="dropdown-content">
-      <a href="#!">MISSION</a>
-      <%=link_to principals_path do%>VALUES<%end%>
-      <%=link_to biographies_path do%>BIOGRAPHIES<%end%>
-      </div>
-        </li>
-        <li class="dropdown">
-  <a href="/projects" class="dropbtn">PODS</a>
-  <div class="dropdown-content">
-    <a href="#!">BYOU</a>
-    <a href="#!">Terracycle</a>
-    <a href="#!">Break Free from the Plastic</a>
-    <a href="#!">Butterfiles and the Bees</a>
-  </div>
-</li>
+            <a href="javascript:void(0)" class="dropbtn">OUR STORY</a>
+            <div class="dropdown-content">
+              <a href="#!">MISSION</a>
+              <%=link_to principals_path do%>VALUES<%end%>
+              <%=link_to biographies_path do%>BIOGRAPHIES<%end%>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="/projects" class="dropbtn">PODS</a>
+            <div class="dropdown-content">
+              <a href="#!">BYOU</a>
+              <a href="#!">Terracycle</a>
+              <a href="#!">Break Free from the Plastic</a>
+              <a href="#!">Butterfiles and the Bees</a>
+            </div>
+          </li>
           <li><%=link_to galleries_path do%>ART<%end%></li>
           <li><%=link_to posters_path do%>PARTIES<%end%>
           <li><a href="">SYNC UP</a></li>

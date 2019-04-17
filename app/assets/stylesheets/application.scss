@@ -22,17 +22,17 @@
   .nav-wrapper{
     background-color: transparent !important;
     font-family:courier;
+    position:fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
   }
 
-  ul {
+.navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: rgba(199, 201, 207, 0.5);
-    //position:fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
   }
 
   li {
