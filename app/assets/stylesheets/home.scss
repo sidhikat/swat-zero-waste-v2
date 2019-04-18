@@ -11,15 +11,16 @@
 
 .button {
   display: block;
-  background: #CD661D !important;
+  background: rgba(191, 81, 23, 0.55) !important;
   border: none;
   color: white;
-  padding: 14px 28px;
+  padding: 14px 28px !important;
   text-align: center;
   cursor: pointer;
-  border-radius: 16px;
+  border-radius: 16px !important;
   margin: 40% 48% !important;
-  width:5% !important;
+  width:10% !important;
+  font-size: large !important;
 }
 
 .button:hover{
