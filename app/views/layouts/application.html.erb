@@ -9,12 +9,6 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <!-- <body>
-    <ul id="dropdown1" class="dropdown-content">
-      <li><a href="#!">MISSION</a></li>
-      <li><%=link_to principals_path do%>VALUES<%end%></li>
-      <!<li><%=link_to biographies_path do%>BIOGRAPHIES<%end%></li>
-    </ul> --> -->
 
     <body>
 
@@ -33,12 +27,11 @@
             </div>
           </li>
           <li class="dropdown">
-            <a href="/projects" class="dropbtn">PODS</a>
+            <a href="/pods" class="dropbtn">PODS</a>
             <div class="dropdown-content">
-              <a href="#!">BYOU</a>
-              <a href="#!">Terracycle</a>
-              <a href="#!">Break Free from the Plastic</a>
-              <a href="#!">Butterfiles and the Bees</a>
+              <% @pods.each do |pod| %>
+                <%=link_to pod.title, pod_path(pod)%>
+              <%end%>
             </div>
           </li>
           <li><%=link_to galleries_path do%>ART<%end%></li>

@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   end
   resources :posters
   resources :principals
-  resources :projects
+  resources :projects, as: "pods", path: "pods"
 
   get 'home/index'
   get 'ourstory/mission'

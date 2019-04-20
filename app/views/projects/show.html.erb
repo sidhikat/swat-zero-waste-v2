@@ -1,8 +1,15 @@
-<p id="notice"><%= notice %></p>
+  <div class="panel">
+    <div class="pod-title">
+      <h2> <%= @project.title %> </h2>
+    </div>
+    <div class="image-desc-panel">
 
-<%= image_tag(@project.picture) %>
+      <div class="pod-image-cont">
+        <%= image_tag @project.picture.url.to_s, :class => "pod-image" %>
+      </div>
+      <span class="pod-desc">
+        <%= @project.description %>
+      </span>
 
-</br></br>
-
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+    </div>
+  </div>
