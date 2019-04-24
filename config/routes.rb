@@ -11,10 +11,9 @@ Rails.application.routes.draw do
   resources :projects, as: "pods", path: "pods"
 
   get 'home/index'
-  get 'ourstory/mission'
+  get 'home/mission'
   get 'ourstory/values'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'home#index'
-
 
 end
