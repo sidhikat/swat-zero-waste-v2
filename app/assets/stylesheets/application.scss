@@ -16,8 +16,8 @@
  * Scope: Entire application
  */
 
-  //@import 'materialize';
-  //@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+//@import 'materialize';
+//@import "https://fonts.googleapis.com/icon?family=Material+Icons";
 
   .nav-wrapper{
     background-color: transparent !important;
@@ -27,7 +27,7 @@
     width: 100%; /* Full width */
   }
 
-.navbar {
+  .navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -35,8 +35,6 @@
     background-color: rgba(199, 201, 207, 0.75);
     font-size: 150%;
   }
-
-
 
   li {
     float: left;
