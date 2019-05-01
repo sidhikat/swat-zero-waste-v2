@@ -7,8 +7,6 @@
   width: 500px !important;
 }
 
-
-
 .button {
   display: block;
   background: rgba(191, 81, 23, 0.55) !important;
@@ -27,10 +25,63 @@
   background-color:grey;
 }
 
-
 body{
   background-image: url("home_page.jpeg");
   background-size: 100% auto;
   background-position: center top;
   background-attachment: fixed;
+}
+
+// css for ourstory/mission
+h2 {
+  color: white;
+  font-size: 40px;
+  font-style: bold;
+  letter-spacing: 7px;
+  padding-top: 10px;
+}
+
+.our_story-nav {
+  width: auto;
+  height: 125px;
+  background: rgba(105, 42, 7, 0.55) !important;
+  font-size: 24px;
+  font-family: 'Space Mono', monospace;
+  letter-spacing: 2px;
+  color: rgb(216, 192, 177);
+  text-align: center;
+  font-style: bold;
+}
+
+.submenu_bar {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(206, 167, 141);
+  text-align: center;
+}
+
+.submenu_list {
+  list-style-type: none;
+  margin: center;
+  padding: 5px;
+}
+
+.mission {
+  background: rgba(41, 25, 1, 0.55) !important;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px 75px 100px 75px;
+}
+
+.text {
+  font-size: 18px;
+}
+
+.quote {
+  // italic
+  font-size: 24px;
+}
+
+.author {
+  font-size: 21px;
 }
