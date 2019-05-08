@@ -3,6 +3,11 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 * {box-sizing: border-box}
 
+html{
+  width: 100% !important;
+  position: absolute;
+}
+
 .button {
   display: block;
   background: rgba(191, 81, 23, 0.55) !important;
