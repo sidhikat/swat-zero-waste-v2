@@ -8,18 +8,20 @@
 
   <body>
     <div class="our_story-nav">
-      <h2>OUR STORY</h2>
+      <h1>OUR STORY</h1>
 
-      <div class="submenu_bar">
-        <li class="submenu_list"><a href="home/mission">mission</a></li>
-        <li class="submenu_list"><%=link_to principals_path do%>values<%end%></li>
-        <li class="submenu_list"><%=link_to biographies_path do%>biographies<%end%></li>
-      </div>
+      <nav>
+        <a class="current" href="home/mission">mission</a>
+        <%=link_to principals_path do%>values<%end%>
+        <%=link_to biographies_path do%>biographies<%end%>
+      </nav>
 
     </div>
 
     <div class="mission">
       <h2>OUR MISSION</h2>
+
+      <img src="/images/about_mission_banner.png" alt="5 pictures of various SZW projects">
       <!-- include mission banner-->
       <p class="text">Sync Up for Zero Waste (SZW) has the mission of bringing to life a
         unique culture and community that surrounds zero waste. In recognition of the many
@@ -33,7 +35,6 @@
 
       <p class="quote"> “Another world is not only possible, she is on her way. On a quiet day,
         I can hear her breathing.”</p>
-
       <p class="author"> - Arundhati Roy </p>
 
     </div>
