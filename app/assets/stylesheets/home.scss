@@ -33,41 +33,56 @@ body{
 }
 
 // css for ourstory/mission
-h2 {
+h1 {
   color: white;
   font-size: 40px;
   font-style: bold;
   letter-spacing: 7px;
-  padding-top: 10px;
+  padding-top: 25px;
 }
 
-.our_story-nav {
-  width: auto;
-  height: 125px;
-  background: rgba(105, 42, 7, 0.55) !important;
+h2 {
+  color: white;
+  font-size: 36px;
+  letter-spacing: 10px;
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'Biryani', sans-serif;
+  font-stretch: condensed; 
+}
+
+nav {
   font-size: 24px;
+  padding-bottom: 15px;
   font-family: 'Space Mono', monospace;
-  letter-spacing: 2px;
-  color: rgb(216, 192, 177);
+  letter-spacing: 3px;
   text-align: center;
   font-style: bold;
 }
 
-.submenu_bar {
-  font-size: 24px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(206, 167, 141);
-  text-align: center;
+a:link, a:visited {
+  text-decoration: none;
+  color: rgb(230, 212, 201);
+  padding: 0px 10px;
 }
 
-.submenu_list {
-  list-style-type: none;
-  margin: center;
-  padding: 5px;
+a:hover, a:active {
+  color: rgb(143, 120, 105);
+  padding: 0px 10px;
+}
+
+.our_story-nav {
+  width: auto;
+  height: auto;
+  background: rgba(105, 42, 7, 0.55) !important;
+  font-family: 'Space Mono', monospace;
+  text-align: center;
+  font-style: bold;
 }
 
 .mission {
-  background: rgba(41, 25, 1, 0.55) !important;
+  height: auto;
+  background: rgba(41, 25, 1, 0.596) !important;
   color: white;
   font-family: 'Courier New', Courier, monospace;
   padding: 10px 75px 100px 75px;
@@ -78,8 +93,11 @@ h2 {
 }
 
 .quote {
-  // italic
-  font-size: 24px;
+  font-size: 20px;
+  font-style: italic;
+  float: left;
+  padding-bottom: -10px;
+  font-style: bold;
 }
 
 .author {
