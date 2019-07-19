@@ -33,19 +33,36 @@ body{
   background-size: 100% auto;
   background-position: center top;
   background-attachment: fixed;
+  //prevents horizontal scrolling
+  overflow-x: hidden;
 }
 
 //css for "our pods" section
 .our_pods{
-  margin: 0 7%;
+  margin: 0;
   width: 100%;
   line-height: 0;
   font-size: 0;
   display:inline-block;
   padding: 5px;
-  padding-top: 10%;
+  padding-top: 5px;
   background: rgba(70, 158, 61, 0.55);
 }
+//for our pods title
+#target{
+  font-family: 'Special Elite', cursive;
+  font-size: 40px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  //centering the title
+  position: absolute;
+  left: 45%;
+
+  //top: 70%;
+}
+
+//for each column
 .column{
   font-family: 'Special Elite', cursive;
   float: left;
@@ -53,6 +70,7 @@ body{
   display:inline-block;
   vertical-align:top;
   padding: 15px;
+  padding-top: 50px;
   font-size: 24px;
   color: white;
   position: relative;
@@ -106,7 +124,7 @@ h2 {
   padding-top: 10px;
   text-align: center;
   font-family: 'Biryani', sans-serif;
-  font-stretch: condensed; 
+  font-stretch: condensed;
 }
 
 nav {
