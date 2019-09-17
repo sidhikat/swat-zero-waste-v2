@@ -32,7 +32,8 @@ Created in Spring 2019.
 
 Team in Fall 2019: 
 + **Technical Lead:** Sidhika Tripathee ([sidhikat](https://github.com/sidhikat))
-+ **Assistant Technical Lead:** Samuel Rothstein
++ **Assistant Technical Lead:** Samuel Rothstein ([srothst1](https://github.com/srothst1))
 + **Project Manager:** Sharon Hu ([husharon](https://github.com/husharon))
 + **Developer:** Jesse Li ([veggiedefender](https://github.com/veggiedefender))
++ **Developer:** Cassandra Stone([poshandcirc](https://github.com/poshandcirc))
 
