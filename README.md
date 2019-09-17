@@ -29,3 +29,10 @@ Created in Spring 2019.
 + **Technical Lead:** Laura Phelps ([PhelpsLaura](https://github.com/PhelpsLaura/))
 + **Assistant Technical Lead:** Sidhika Tripathee ([sidhikat](https://github.com/sidhikat))
 + **Project Manager, Designer, and Developer:** Sharon Hu ([husharon](https://github.com/husharon))
+
+Team in Fall 2019: 
++ **Technical Lead:** Sidhika Tripathee ([sidhikat](https://github.com/sidhikat))
++ **Assistant Technical Lead:** Samuel Rothstein
++ **Project Manager:** Sharon Hu ([husharon](https://github.com/husharon))
++ **Developer:** Jesse Li ([veggiedefender](https://github.com/veggiedefender))
+
