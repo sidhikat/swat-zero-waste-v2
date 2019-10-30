@@ -19,6 +19,10 @@
 //@import 'materialize';
 //@import "https://fonts.googleapis.com/icon?family=Material+Icons";
 
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
   .nav-wrapper{
     background-color: transparent !important;
     font-family:courier;

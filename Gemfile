@@ -3,6 +3,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.3'
 
+#add bootstrap framework
+gem 'bootstrap-sass', '~> 3.4.1'
+#make sure sass is present
+gem 'sassc-rails', '>= 2.1.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
 # Use postgresql as the database for Active Record
