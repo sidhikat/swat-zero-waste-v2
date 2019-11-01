@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protected
 
   def access_pods
-    @pods = Project.all
+    @project = Project.all
   end
 
 end
