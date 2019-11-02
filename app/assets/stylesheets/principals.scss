@@ -26,58 +26,58 @@
 //
 
 //
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+// @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 
-.values_list{
-  display: grid;
-  background-color: rgba(191, 81, 23, 0.4) !important;
-  margin: 100px;
-  margin-top: 30px;
-  margin-right: 75px;
+// .values_list{
+//   display: grid;
+//   background-color: rgba(191, 81, 23, 0.4) !important;
+//   margin: 100px;
+//   margin-top: 30px;
+//   margin-right: 75px;
 
-}
+// }
 
-ol {
-  list-style: none;
-  counter-reset: my-awesome-counter;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 30px;
-  padding: 0;
-}
-ol li {
-  counter-increment: my-awesome-counter;
-  display: flex;
-  color: #EEEDED;
-  font-size: 1.5rem;
-  font-weight: bold;
-  font-style: italic;
-  margin-top: 5px;
-  line-height: 1;
-  width: 50%;
-  //margin: 1%;
-  float: left;
-}
-ol li::before {
-  content: "0" counter(my-awesome-counter);
-  font-weight: bold;
-  font-size: 4rem;
-  margin-right: 0.5rem;
-  font-family: 'Abril Fatface', serif;
-  line-height: 1;
-}
+// ol {
+//   list-style: none;
+//   counter-reset: my-awesome-counter;
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin: 30px;
+//   padding: 0;
+// }
+// ol li {
+//   counter-increment: my-awesome-counter;
+//   display: flex;
+//   color: #EEEDED;
+//   font-size: 1.5rem;
+//   font-weight: bold;
+//   font-style: italic;
+//   margin-top: 5px;
+//   line-height: 1;
+//   width: 50%;
+//   //margin: 1%;
+//   float: left;
+// }
+// ol li::before {
+//   content: "0" counter(my-awesome-counter);
+//   font-weight: bold;
+//   font-size: 4rem;
+//   margin-right: 0.5rem;
+//   font-family: 'Abril Fatface', serif;
+//   line-height: 1;
+// }
 
-p {
-  //display: inline-block;
-  vertical-align: text-bottom;
-  font-size: 1em;
-  line-height: 1.5;
-  text-align: center;
-  margin: 5%;
-  margin-right: 4%;
-}
+// p {
+//   //display: inline-block;
+//   vertical-align: text-bottom;
+//   font-size: 1em;
+//   line-height: 1.5;
+//   text-align: center;
+//   margin: 5%;
+//   margin-right: 4%;
+// }
 
-body {
-  padding: 1rem;
-  font-family: sans-serif;
-}
+// body {
+//   padding: 1rem;
+//   font-family: sans-serif;
+// }
