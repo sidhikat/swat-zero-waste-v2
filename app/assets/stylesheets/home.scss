@@ -10,7 +10,6 @@ html{
 
 .sync-up-back {
   font-family: 'Abril Fatface', cursive;
-  z-index: -5;
   text-align: center;
   display: table;
   position: relative;
@@ -24,25 +23,27 @@ html{
   font-size: 4em;
 }
 
-.sync-up-front-left {
-  width: 50%;
-  margin-left: 0;
-  z-index: 2;
-  float:left;
-  position: relative;
-  display: block;
-  margin-top: -55%;
-  padding-right: 5em;
-  padding-left: 0;
+.sync-up-front {
+  display: flex;
+  z-index: 1;
+  margin-top: -30%;
+  position: absolute;
+  width: 100%;
+  justify-content: center space-between;
+  padding: 0 2em;
 }
 
-.sync-up-front-right {
-  width: 50%;
-  margin-right: 0;
-  position: relative;
-  display:block;
-  z-index: 1;
+.logo-img {
+  z-index: -3;
 }
+
+.sync-up-front-col {
+  flex: 50%;
+  width: 50%;
+  margin: 4em;
+  display: block;
+}
+
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
