@@ -27,16 +27,6 @@ html{
   background-color:grey;
 }
 
-//background picture
-body{
-  background-image: url("home_page.jpeg");
-  background-size: 100% auto;
-  background-position: center top;
-  background-attachment: fixed;
-  //prevents horizontal scrolling
-  overflow-x: hidden;
-}
-
 //css for "our pods" section
 .our_pods{
   margin: 0;

@@ -93,7 +93,19 @@
     border-color: black;
     border-width: 2px;
     bottom: 0px;
+    right: 0px;
+    left: 0px;
     width: 100%;
+  }
+
+  //background picture
+  body{
+    background-image: url("background.png");
+    background-size: 100% auto;
+    background-position: center top;
+    background-attachment: fixed;
+    //prevents horizontal scrolling
+    overflow-x: hidden;
   }
 
 
