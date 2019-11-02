@@ -5,3 +5,39 @@
 .pods {
   padding: 10px;
 }
+
+
+
+p {
+  font-family: 'Abril Fatface',garamond,serif;
+  font-size:35px;
+  font-style:bold;
+}
+
+.about {
+  //position
+  height: 45px;
+  //width: 100px;
+  margin-left: 30px;
+
+  //outline and border
+  outline: none;
+  border: 1px solid #cdcdcd;
+  border-color: rgba(145, 167, 100, 1);
+  background-color: rgba(145, 167, 100, 1);
+
+}
+
+.about_text {
+  //position
+  height: 90px;
+  //width: 500px;
+  flex: 1;
+  margin-top: -20px;
+
+  //outline and border
+  outline: none;
+  border: 2px solid #cdcdcd;
+  border-color: rgba(1, 1, 1, .75);
+  background-color: rgba(145, 167, 100, .75);
+}
