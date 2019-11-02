@@ -4,7 +4,7 @@ class CreatePosters < ActiveRecord::Migration[5.2]
       t.date :event
       t.string :title
       t.text :description
-      t.boolean :feature
+      t.boolean :upcoming
 
       t.timestamps
     end
