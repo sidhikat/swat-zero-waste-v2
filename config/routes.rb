@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   get 'contact/index'
-  get 'ourstory/index'
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :biographies
@@ -11,9 +10,9 @@ Rails.application.routes.draw do
   resources :posters
   resources :principals
   resources :projects, as: "pods", path: "pods"
+  resources :ourstory
 
   get 'home/index'
-  get 'home/mission', as:'mission'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'home#index'
 

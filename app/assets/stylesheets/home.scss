@@ -27,16 +27,6 @@ html{
   background-color:grey;
 }
 
-//background picture
-body{
-  background-image: url("home_page.jpeg");
-  background-size: 100% auto;
-  background-position: center top;
-  background-attachment: fixed;
-  //prevents horizontal scrolling
-  overflow-x: hidden;
-}
-
 //css for "our pods" section
 .our_pods{
   margin: 0;
@@ -117,16 +107,6 @@ h1 {
   padding-top: 25px;
 }
 
-h2 {
-  color: white;
-  font-size: 36px;
-  letter-spacing: 10px;
-  padding-top: 10px;
-  text-align: center;
-  font-family: 'Biryani', sans-serif;
-  font-stretch: condensed;
-}
-
 nav {
   font-size: 24px;
   padding-bottom: 15px;
@@ -154,14 +134,6 @@ a:hover, a:active {
   font-family: 'Space Mono', monospace;
   text-align: center;
   font-style: bold;
-}
-
-.mission {
-  height: auto;
-  background: rgba(41, 25, 1, 0.596) !important;
-  color: white;
-  font-family: 'Courier New', Courier, monospace;
-  padding: 10px 75px 100px 75px;
 }
 
 .text {
