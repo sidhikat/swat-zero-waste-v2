@@ -52,7 +52,7 @@
     <p class="heading" >Previous Events</p>
   </div>
   <!-- first row of prev events posters -->
-  <div class = "row">
+  <!-- <div class = "row">
     <div class = "col-md-4">
       <div class = "thumbnail">
   <%= image_tag "past_event.png", :title=> "metamorphosis poster", :style =>"width:100%" %>
@@ -60,17 +60,18 @@
     <p>Insert caption/alt text here</p>
         </div>
       </div>
-  </div>
+  </div> -->
 <!-- test row for database -->
   <div class= "row">
     <% @posters.each do |poster| %>
       <div class = "col-md-4">
         <div class = "thumbnail">
-            <%= image_tag poster.picture.url.to_s%>
+            <%= image_tag poster.picture.url.to_s, :title=> poster.title%>
             <div class="caption">
               <%= poster.description %>
             </div>
         </div>
+
       </div>
       <% end%>
   </div>
