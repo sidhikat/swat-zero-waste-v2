@@ -1,43 +1,17 @@
-<!DOCTYPE html>
-<html>
+<div class="container centered">
+  <h1 class="title">Our Story</h1>
+</div>
 
-  <head>
-    <title>Mission</title>
-    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Biryani:800|Libre+Baskerville|Space+Mono" rel="stylesheet">
-  </head>
+<div class="toggles">
+  <button class="btn btn-default" id="btn-mission">Our mission and values</button>
+  <button class="btn btn-default" id="btn-members">Members</button>
+</div>
 
-  <body>
-    <div class="our_story-nav">
-      <h1>OUR STORY</h1>
-
-      <nav>
-        <a class="current" href="/home/mission">mission</a>
-        <%=link_to principals_path do%>values<%end%>
-        <%=link_to biographies_path do%>biographies<%end%>
-      </nav>
-
-    </div>
-
-    <div class="mission">
-      <h2>OUR MISSION</h2>
-
-      <img src="/images/about_mission_banner.png" alt="5 pictures of various SZW projects">
-      <!-- include mission banner-->
-      <p class="text">Sync Up for Zero Waste (SZW) has the mission of bringing to life a
-        unique culture and community that surrounds zero waste. In recognition of the many
-        associations the term has, we strive to create our own definition and lived practice
-        of the term. Through developing relationships across the community, we hope to bring
-        a sense of unity as it strives to bring changes for Swarthmore members to feel more
-        connected to each other and other Earthlings. As a group we acknowledge in humility
-        that zero waste is an ever-changing and everlasting project that will require holistic
-        change. We will model itself off of a new type of organizational structure-- “Spintop”
-        -- to allow for more inclusion, freedom, and diversity. </p>
-
-      <p class="quote"> “Another world is not only possible, she is on her way. On a quiet day,
-        I can hear her breathing.”</p>
-      <p class="author"> - Arundhati Roy </p>
-
-    </div>
-  </body>
-
-</html>
+<div class="content">
+  <div class="section-mission">
+    <%= render :partial => 'mission' %>
+  </div>
+  <div class="section-members">
+    <%= render :partial => 'members' %>
+  </div>
+</div>
