@@ -6,46 +6,58 @@
   <!-- <div class="row">
   <%= link_to posters_path, :class => "button btn btn-default btn-md" do%>PARTIES<%end%>
 </div> -->
-<div class ="span4">
-  <p class= "heading">PARTIES</p>
-</div>
-  <div class="span4">
-    <!-- <div class="col-sm-3 col-md-6" style="background-color:yellow;"> -->
-      <p class="heading" >Upcoming events</p>
+  <div class ="span4">
+    <p class= "heading">PARTIES</p>
+  </div>
+    <div class="span4">
+      <!-- <div class="col-sm-3 col-md-6" style="background-color:yellow;"> -->
+        <p class="heading" >Upcoming events</p>
+      </div>
+      <!-- add a row of images for upcoming events -->
+      <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="https://www.instagram.com/p/B3-4l2ZnwWc/?utm_source=ig_web_copy_link">
+          <%=image_tag "clothingSwapPoster.png", :title=>"clothing Swap Poster", :style =>"width:100%" %>
+          <div class="caption">
+            <p>Insert caption/alt text here</p>
+          </div>
+        </a>
+      </div>
     </div>
-    <!-- add a row of images for upcoming events -->
-    <div class="row">
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <a href="https://www.instagram.com/p/B3-4l2ZnwWc/?utm_source=ig_web_copy_link">
-        <%=image_tag "clothingSwapPoster.png", :title=>"clothing Swap Poster", :style =>"width:100%" %>
-        <div class="caption">
-          <p>Insert caption/alt text here</p>
-        </div>
-      </a>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="https://www.instagram.com/p/B3-4l2ZnwWc/?utm_source=ig_web_copy_link">
+          <%=image_tag "clothingSwapPoster.png", :title=>"clothing Swap Poster", :style =>"width:100%" %>
+          <!-- <img src="clothingSwapPoster.png" alt="clothing Swap Poster" style="width:100%"> -->
+          <div class="caption">
+            <p>Insert caption/alt text here</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="https://www.instagram.com/p/B3-4l2ZnwWc/?utm_source=ig_web_copy_link">
+          <%=image_tag "clothingSwapPoster.png", :title=>"clothing Swap Poster", :style =>"width:100%" %>
+          <div class="caption">
+            <p>Insert caption/alt text here</p>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <a href="https://www.instagram.com/p/B3-4l2ZnwWc/?utm_source=ig_web_copy_link">
-        <%=image_tag "clothingSwapPoster.png", :title=>"clothing Swap Poster", :style =>"width:100%" %>
-        <!-- <img src="clothingSwapPoster.png" alt="clothing Swap Poster" style="width:100%"> -->
-        <div class="caption">
-          <p>Insert caption/alt text here</p>
-        </div>
-      </a>
-    </div>
+<!-- previous event heading -->
+  <div class ="row">
+    <p class="heading" >Previous Events</p>
   </div>
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <a href="https://www.instagram.com/p/B3-4l2ZnwWc/?utm_source=ig_web_copy_link">
-        <%=image_tag "clothingSwapPoster.png", :title=>"clothing Swap Poster", :style =>"width:100%" %>
-        <div class="caption">
-          <p>Insert caption/alt text here</p>
-        </div>
-      </a>
-    </div>
+  <!-- first row of prev events posters -->
+  <div class = "row">
+    <div class = "col-md-4">
+      <div class = "thumbnail">
+  <%= image_tag "past_event.png", :title=> "metamorphosis poster", :style =>"width:100%" %>
   </div>
-</div>
-
+  div class="caption">
+    <p>Insert caption/alt text here</p>
+  </div>
 </div>
