@@ -2,7 +2,7 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-DEFAULT_SECTION = '.section-mission'
+DEFAULT_SECTION = '.section-members'
 SECTIONS = ['.section-mission', '.section-members']
 
 showSection = (shownSection) ->
