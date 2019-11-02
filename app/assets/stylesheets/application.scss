@@ -22,91 +22,79 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
-  .nav-wrapper{
-    background-color: transparent !important;
-    font-family:courier;
-    position:fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    left:0;
-  }
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Cabin&display=swap');
 
   .navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
-    background-color: rgba(199, 201, 207, 0.75);
-    font-size: 150%;
+    background-color: rgba(145, 167, 100, 0.9);
+    font-size: 2em;
+    font-family: 'Cabin', sans-serif;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 2px;
+    padding: 0;
   }
 
-  li {
-    float: left;
+  .header {
+    padding: 0px;
+  }
+
+  .nav-items {
+    display: inline-block;
+  }
+
+  ul {
+    list-style-type: none;
+    vertical-align: center;
+  }
+
+  .nav-item {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    float: block;
+    padding: 10px 40px;
+  }
+
+  .nav-item-img {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   li a {
-    display: block !important;
-    color: white !important;
+    display: inline-block !important;
+    color: black !important;
     text-align: center !important;
-    padding: 14px 50px !important;
     text-decoration: none !important;
-
+    background-color: inherit;
   }
 
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #111;
+  .nav-item:hover {
+    background-color: rgba(94, 105, 70, 0.25);
+    border-radius: 5px;
   }
-/* Dropdown Button */
-  li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-/* Dropdown Button */
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: grey;
-}
-/* The container <div> - needed to position the dropdown content */
-li.dropdown {
-  display: inline-block;
-}
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  color: black !important;
-}
+  /* TODO: take out annoying bootstrap default nav-link hover/active color properties. Low priority. */
+  .nav-link {
+    background-color: inherit;
+    border-radius: 5px;
+  }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-color: black !important;
-}
+  .nav-link:active {
+    background-color: inherit;
+    border-radius: 5px;
+  }
 
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
+  .footer {
+    position: absolute;
+    background-color: rgba(145, 167, 100, 0.9);
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Cabin', sans-serif;
+    border-color: black;
+    border-width: 2px;
+    margin-bottom: 0px;
+    bottom: 0px;
+    width: 100%;
+  }
 
-}
 
-.dropdown:hover .dropdown-content {
-  display: block;
-
-}
-
-body{
-  margin-top: 70px;
-  height: 100%;
-}
