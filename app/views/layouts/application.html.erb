@@ -28,14 +28,6 @@
                 <%=link_to biographies_path do%>BIOGRAPHIES<%end%>
               </div>
             </li>
-            <li class="dropdown">
-              <a href="/pods" class="dropbtn">PODS</a>
-              <div class="dropdown-content">
-                <% @pods.each do |pod| %>
-                  <%=link_to pod.title, pod_path(pod)%>
-                <%end%>
-              </div>
-            </li>
             <li><%=link_to galleries_path do%>ART<%end%></li>
             <li><%=link_to posters_path do%>PARTIES<%end%>
             <li><a href="">SYNC UP</a></li>
@@ -45,8 +37,5 @@
     <%= yield %>
   </body>
 
-  <script>
-    $(".dropdown-trigger").dropdown({hover:true});
-  </script>
 
 </html>
