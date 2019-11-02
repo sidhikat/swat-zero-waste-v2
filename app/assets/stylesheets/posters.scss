@@ -1,3 +1,23 @@
 // Place all the styles related to the Posters controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.button{
+  margin-top:5px !important;
+  margin-left: auto;
+}
+.row {
+  width: 100%
+}
+.heading{
+  margin-left: 40%;
+  margin-right: 40%;
+  width: 20%;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Abril Fatface";
+  font-style: bold;
+  font-size: 25px;
+  border: 3px solid black;
+  background-color: #91A764;
+}

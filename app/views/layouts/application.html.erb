@@ -29,12 +29,7 @@
               </div>
             </li>
             <li class="dropdown">
-              <a href="/pods" class="dropbtn">PODS</a>
-              <div class="dropdown-content">
-                <% @pods.each do |pod| %>
-                  <%=link_to pod.title, pod_path(pod)%>
-                <%end%>
-              </div>
+            
             </li>
             <li><%=link_to galleries_path do%>ART<%end%></li>
             <li><%=link_to posters_path do%>PARTIES<%end%>
