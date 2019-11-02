@@ -56,8 +56,23 @@
     <div class = "col-md-4">
       <div class = "thumbnail">
   <%= image_tag "past_event.png", :title=> "metamorphosis poster", :style =>"width:100%" %>
-  </div>
-  div class="caption">
+        <div class="caption">
     <p>Insert caption/alt text here</p>
+        </div>
+      </div>
   </div>
+<!-- test row for database -->
+  <div class= "row">
+    <% @posters.each do |poster| %>
+      <div class = "col-md-4">
+        <div class = "thumbnail">
+            <%= image_tag poster.picture.url.to_s%>
+            <div class="caption">
+              <%= poster.description %>
+            </div>
+        </div>
+      </div>
+      <% end%>
+  </div>
+</div>
 </div>
