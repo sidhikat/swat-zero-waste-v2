@@ -1,28 +1,19 @@
-<div class="panel">
-    <h4 class="pods-header">Pods! </h4>
 
-    <!-- Slideshow container -->
-   <div class="slideshow-container">
-     <% @projects.each do |pod| %>
-      <%= render pod %>
-    <% end %>
+<div class="pods">
+    <h1>Pods</h1>
 
-   </div>
-   <br>
+    <div class="about">
+        <p>
+        About
+        </p>
 
-   <!-- The dots/circles -->
-   <div style="text-align:center">
-      <% n = 0 %>
-      <% @projects.each do |pod| %>
-        <% onclick_s = "currentSlide(#{n.to_s})" %>
-        <% puts("your onclick is #{onclick_s}") %>
-        <%= tag.span class: "dot", onclick: onclick_s %>
-        <%n+=1%>
-      <% end %>
-   </div>
+        <div class="about_text container-fluid">
+            <p>
+            Text.......
+            </p>
+        </div>
 
-<script type="text/javascript">
-  showSlides(0);
-</script>
+    </div>
+
 
 </div>

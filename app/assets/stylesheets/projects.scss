@@ -2,112 +2,42 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+.pods {
+  padding: 10px;
 }
 
 
-.panel{
-  border: 5px;
-  height: 200%;
-  margin: 1% !important;
-  text-align: center !important;
-  padding-left: 100px !important;
-  background-color: rgba(169, 169, 169, 0.65);
+
+p {
+  font-family: 'Abril Fatface',garamond,serif;
+  font-size:35px;
+  font-style:bold;
 }
 
-.pod-entry{
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  display: hidden;
+.about {
+  //position
+  height: 45px;
+  //width: 100px;
+  margin-left: 30px;
+
+  //outline and border
+  outline: none;
+  border: 1px solid #cdcdcd;
+  border-color: rgba(145, 167, 100, 1);
+  background-color: rgba(145, 167, 100, 1);
+
 }
 
-.pod-title{
-  text-align: center;
-}
-
-.image-desc-panel{
-  display: flex;
-}
-
-.pod-image-cont{
-  dispay: inline-flex;
-  width: 40%;
-  margin: 0;
-}
-
-.pod-image{
-  dispay: inline-flex;
-  width: 100%;
-  height: 100%;
-}
-
-.pod-desc{
-  text-align: left;
-  margin: 3%;
+.about_text {
+  //position
+  height: 90px;
+  //width: 500px;
   flex: 1;
-}
+  margin-top: -20px;
 
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  //outline and border
+  outline: none;
+  border: 2px solid #cdcdcd;
+  border-color: rgba(1, 1, 1, .75);
+  background-color: rgba(145, 167, 100, .75);
 }
