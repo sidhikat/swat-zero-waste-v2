@@ -1,1 +1,19 @@
-<p>members placeholder</p>
+<div class="biographies">
+  <% @biographies.each do |biography| %>
+    <div class="biography">
+      <%= image_tag biography.picture.url.to_s %>
+      <div class="description">
+        <div class="intro">
+          <p><%= biography.name %></p>
+          <p>
+            Class of
+            ‘<%= biography.year.strftime('%y') %>
+          </p>
+        </div>
+        <div class="body">
+          <%= biography.bio %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
