@@ -6,8 +6,6 @@
   padding: 10px;
 }
 
-
-
 p {
   font-family: 'Abril Fatface',garamond,serif;
   font-size:35px;
@@ -40,4 +38,47 @@ p {
   border: 2px solid #cdcdcd;
   border-color: rgba(1, 1, 1, .75);
   background-color: rgba(145, 167, 100, .75);
+}
+
+// Place all the styles related to the ourstory controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.title {
+    background: #91A764;
+    border: 1.5px solid #000000;
+    display: inline-block;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
+.toggles {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content {
+    margin-top: 32px;
+}
+
+.story-section {
+    max-width: 2000px;
+    margin-bottom: 32px;
+    margin-left: 30px;
+    h2 {
+        background: #91A764;
+        display: inline-block;
+        margin: 0;
+        padding: 8px 32px;
+    }
+    .body-text {
+        background: #C5CEB4;
+        border: 1.5px solid #000000;
+        padding: 16px;
+    }
+    img {
+        margin-bottom: 32px;
+    }
 }
