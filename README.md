@@ -33,6 +33,7 @@ Created in Spring 2019.
 Team in Fall 2019: 
 + **Technical Lead:** Sidhika Tripathee ([sidhikat](https://github.com/sidhikat))
 + **Project Manager:** Sharon Hu ([husharon](https://github.com/husharon))
++ **Designer:** Sophie Peterson
 + **Developer:** Samuel Rothstein ([srothst1](https://github.com/srothst1))
 + **Developer:** Jesse Li ([veggiedefender](https://github.com/veggiedefender))
 + **Developer:** Cassandra Stone([poshandcirc](https://github.com/poshandcirc))
