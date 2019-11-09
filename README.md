@@ -1,6 +1,6 @@
 # README
 
-This repository is a product of the Swarthmore Tech 4 Social Good, Spring 2019. Rails website built for Swat Zero Waste, an organization working to dramatically rethink the consumption culture of Swarthmore College.
+This repository is a product of the Swarthmore Tech 4 Social Good, Spring 2019. Rails website built for Sync up for Zero Waste, an organization working to dramatically rethink the consumption culture of Swarthmore College.
 
 <!--TODO: I'd like to put all of the documentation notes into a separate repository at the end of the project (maybe before?) for future teams to reference.-->
 
