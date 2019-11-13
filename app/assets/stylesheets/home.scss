@@ -6,6 +6,12 @@
 html{
   width: 100% !important;
   position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 100vh;
 }
 
 .sync-up-back {
@@ -24,34 +30,25 @@ html{
 }
 
 .sync-up-front {
-  display: flex;
   z-index: 1;
-  margin-top: -30%;
-  position: absolute;
   width: 100%;
-  justify-content: center space-between;
-  padding: 0 2em;
+  position: relative;
+  margin-top: -35%;
+  align-content: center;
+}
+
+.right {
+  width: 30%;
+  text-align: right;
+  float: right;
+}
+
+.left {
+  width: 30%;
+  text-align: left;
+  float: left;
 }
 
 .logo-img {
   z-index: -3;
-}
-
-.sync-up-front-col {
-  flex: 50%;
-  width: 50%;
-  margin: 4em;
-  display: block;
-}
-
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-nav {
-  text-align: center;
 }
