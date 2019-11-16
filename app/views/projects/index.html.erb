@@ -1,28 +1,63 @@
-<div class="panel">
-    <h4 class="pods-header">Pods! </h4>
+<div class="container centered">
+  <h1 class="title">Pods</h1>
+</div>
 
-    <!-- Slideshow container -->
-   <div class="slideshow-container">
-     <% @projects.each do |pod| %>
-      <%= render pod %>
-    <% end %>
+<div class="content">
+  <div class="section-mission">
 
-   </div>
-   <br>
+  </div>
+  <div class="section-members">
 
-   <!-- The dots/circles -->
-   <div style="text-align:center">
-      <% n = 0 %>
-      <% @projects.each do |pod| %>
-        <% onclick_s = "currentSlide(#{n.to_s})" %>
-        <% puts("your onclick is #{onclick_s}") %>
-        <%= tag.span class: "dot", onclick: onclick_s %>
-        <%n+=1%>
-      <% end %>
-   </div>
+  </div>
+</div>
 
-<script type="text/javascript">
-  showSlides(0);
-</script>
 
+<div class="story-section center-block">
+  <h2>About</h2>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="body-text">
+        <p>  At SZW we have a....</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="story-section right">
+  <h2>B You</h2>
+  <div class="row">
+    <div class="col-md-4">
+
+      <img src="https://via.placeholder.com/641x749" class="img-responsive">
+    </div>
+  </div>
+</div>
+
+<div class="story-section left">
+  <h2>Break Free From Plastic</h2>
+  <div class="row">
+    <div class="col-md-4">
+
+      <img src="https://via.placeholder.com/641x749" class="img-responsive">
+    </div>
+  </div>
+</div>
+
+<div class="story-section right">
+  <h2>Terracycle</h2>
+  <div class="row">
+    <div class="col-md-4">
+
+      <img src="https://via.placeholder.com/641x749" class="img-responsive">
+    </div>
+  </div>
+</div>
+
+<div class="story-section left">
+  <h2>Butterflies and The Bees</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <img src="https://via.placeholder.com/641x749" class="img-responsive">
+    </div>
+  </div>
 </div>

@@ -78,7 +78,7 @@ ActiveRecord::Schema.define(version: 2019_04_10_141455) do
     t.date "event"
     t.string "title"
     t.text "description"
-    t.boolean "feature"
+    t.boolean "upcoming"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "picture"
