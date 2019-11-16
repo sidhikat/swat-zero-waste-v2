@@ -33,6 +33,7 @@
     border-color: black;
     border-width: 2px;
     padding: 0;
+    text-align: center;
   }
 
   .header {
@@ -68,19 +69,11 @@
     background-color: inherit;
   }
 
-  .nav-item:hover {
+  // driving me insane, how do you turn off bootstrap default link hover color?
+  .nav-link:hover {
     background-color: rgba(94, 105, 70, 0.25);
-    border-radius: 5px;
-  }
-
-  /* TODO: take out annoying bootstrap default nav-link hover/active color properties. Low priority. */
-  .nav-link {
-    background-color: inherit;
-    border-radius: 5px;
-  }
-
-  .nav-link:active {
-    background-color: inherit;
+    color: rgba(94, 105, 70, 0.25);
+    text-emphasis-color: none;
     border-radius: 5px;
   }
 

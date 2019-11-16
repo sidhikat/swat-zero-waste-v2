@@ -6,148 +6,49 @@
 html{
   width: 100% !important;
   position: absolute;
-}
-
-.button {
-  display: block;
-  background: rgba(191, 81, 23, 0.55) !important;
-  border: none;
-  color: white;
-  padding: 14px 20px !important;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 16px !important;
-  margin: 40% 48% !important;
-  width:10% !important;
-  font-size: large !important;
-  line-height:20px !important;
-}
-
-.button:hover{
-  background-color:grey;
-}
-
-//css for "our pods" section
-.our_pods{
   margin: 0;
-  width: 100%;
-  line-height: 0;
-  font-size: 0;
-  display:inline-block;
-  padding: 5px;
-  padding-top: 5px;
-  background: rgba(70, 158, 61, 0.55);
+  padding: 0;
 }
-//for our pods title
-#target{
-  font-family: 'Special Elite', cursive;
-  font-size: 40px;
-  color: white;
-  text-decoration: none;
+
+.container {
+  min-height: 100vh;
+}
+
+.sync-up-back {
+  font-family: 'Abril Fatface', cursive;
   text-align: center;
-  //centering the title
-  position: absolute;
-  left: 45%;
-
-  //top: 70%;
-}
-
-//for each column
-.column{
-  font-family: 'Special Elite', cursive;
-  float: left;
-  width: 33.33%;
-  display:inline-block;
-  vertical-align:top;
-  padding: 15px;
-  padding-top: 50px;
-  font-size: 24px;
-  color: white;
+  display: table;
   position: relative;
+  margin: 0 auto;
+  padding-bottom: 5em;
 }
-/* Make the image to responsive */
-.image{
-  display: block;
-  width:auto;
-  height:auto;
-  max-width:100%;
+
+.sync-up-back h1 {
+  color: black;
+  padding-bottom: 1em;
+  font-size: 4em;
 }
-/* The overlay effect - lays on top of the container and over the image */
-.overlay {
-  position: absolute;
-  bottom: 10px;
-  color: #f1f1f1;
+
+.sync-up-front {
+  z-index: 1;
   width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 30px;
-  padding: 20px;
-  text-align: center;
+  position: relative;
+  margin-top: -35%;
+  align-content: center;
 }
 
-/* When you mouse over the container, fade in the overlay title */
-.column:hover .overlay {
-  opacity: 1;
+.right {
+  width: 30%;
+  text-align: right;
+  float: right;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-// css for ourstory/mission
-h1 {
-  color: white;
-  font-size: 40px;
-  font-style: bold;
-  letter-spacing: 7px;
-  padding-top: 25px;
-}
-
-nav {
-  font-size: 24px;
-  padding-bottom: 15px;
-  font-family: 'Space Mono', monospace;
-  letter-spacing: 3px;
-  text-align: center;
-  font-style: bold;
-}
-
-a:link, a:visited {
-  text-decoration: none;
-  color: rgb(230, 212, 201);
-  padding: 0px 10px;
-}
-
-a:hover, a:active {
-  color: rgb(143, 120, 105);
-  padding: 0px 10px;
-}
-
-.our_story-nav {
-  width: auto;
-  height: auto;
-  background: rgba(105, 42, 7, 0.55) !important;
-  font-family: 'Space Mono', monospace;
-  text-align: center;
-  font-style: bold;
-}
-
-.text {
-  font-size: 18px;
-}
-
-.quote {
-  font-size: 20px;
-  font-style: italic;
+.left {
+  width: 30%;
+  text-align: left;
   float: left;
-  padding-bottom: -10px;
-  font-style: bold;
 }
 
-.author {
-  font-size: 21px;
+.logo-img {
+  z-index: -3;
 }
