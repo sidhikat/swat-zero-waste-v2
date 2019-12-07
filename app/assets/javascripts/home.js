@@ -21,4 +21,6 @@ function updateImgSrc(src) {
   document.getElementById('intagram-latest').src = src
 }
 
-getPhotoSrc(updateImgSrc)
+$(document).on('turbolinks:load', function() {
+  getPhotoSrc(updateImgSrc)
+})
