@@ -1,63 +1,57 @@
-<div class="container centered">
-  <h1 class="title">Pods</h1>
-</div>
+<div class="container-fluid">
+  <h1 class="heading">Pods</h1>
 
-<div class="content">
-  <div class="section-mission">
-
-  </div>
-  <div class="section-members">
-
-  </div>
-</div>
-
-
-<div class="story-section center-block">
-  <h2>About</h2>
-  <div class="row">
-    <div class="col-md-8">
-      <div class="body-text">
-        <p>  At SZW we have a....</p>
+  <div class="story-section center-block">
+    <h2>About</h2>
+    <div class="row">
+      <div class="col-md-8 body-text">
+          <p> At SZW we have a decentralized power structure that allows anyone to be a leader of their own ‘pod’ and create their own project. 
+          We call them pods to highlight the idea that they are connected to a larger whole even though they can be distinct entities in themselves. 
+          Pods often come in and out of rotation with their leadership are often turn into long-term projects for members. </p>
       </div>
     </div>
   </div>
-</div>
 
-<div class="story-section right">
-  <h2>B You</h2>
-  <div class="row">
-    <div class="col-md-4">
+   <% @projects.each do |pod| %>
+    <%=link_to pod.title, pod_path(pod)%>
+  <%end%>
 
-      <img src="https://via.placeholder.com/641x749" class="img-responsive">
+  <div class="story-section right">
+    <h2>B You</h2>
+    <div class="row">
+      <div class="col-md-4">
+
+        <img src="https://via.placeholder.com/641x749" class="img-responsive">
+      </div>
     </div>
   </div>
-</div>
 
-<div class="story-section left">
-  <h2>Break Free From Plastic</h2>
-  <div class="row">
-    <div class="col-md-4">
+  <div class="story-section left">
+    <h2>Break Free From Plastic</h2>
+    <div class="row">
+      <div class="col-md-4">
 
-      <img src="https://via.placeholder.com/641x749" class="img-responsive">
+        <img src="https://via.placeholder.com/641x749" class="img-responsive">
+      </div>
     </div>
   </div>
-</div>
 
-<div class="story-section right">
-  <h2>Terracycle</h2>
-  <div class="row">
-    <div class="col-md-4">
+  <div class="story-section right">
+    <h2>Terracycle</h2>
+    <div class="row">
+      <div class="col-md-4">
 
-      <img src="https://via.placeholder.com/641x749" class="img-responsive">
+        <img src="https://via.placeholder.com/641x749" class="img-responsive">
+      </div>
     </div>
   </div>
-</div>
 
-<div class="story-section left">
-  <h2>Butterflies and The Bees</h2>
-  <div class="row">
-    <div class="col-md-4">
-      <img src="https://via.placeholder.com/641x749" class="img-responsive">
+  <div class="story-section left">
+    <h2>Butterflies and The Bees</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="https://via.placeholder.com/641x749" class="img-responsive">
+      </div>
     </div>
   </div>
 </div>
