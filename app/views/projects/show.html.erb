@@ -1,0 +1,29 @@
+<div class="container-fluid">
+    <div class="row centered">
+        <h1 class="title">Pods</h1>
+    </div>
+
+    <!-- nav bar that displays all pods. if current project is displayed, highlight that project -->
+    <div class="row centered">
+        <div>
+            <% @projects.order('created_at DESC').each do |project|%>
+                <button class="btn btn-default"><%=project.title%> </button>
+            <%end%>
+        </div>
+    </div>
+    
+
+    <!-- description -->
+
+    <div class="description">
+        <h2 class="subheading">About</h2>
+        <p class="body-text"> <%= @project.description %> </p>
+    </div>
+
+    <!-- photos -->
+
+    <div class="pod_photos centered">
+        <%= image_tag @project.picture.url.to_s, style: "width: 500px", class: "pod-img" %>
+    </div>
+
+</div>

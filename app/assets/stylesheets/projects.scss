@@ -5,6 +5,22 @@
 .pods {
   padding: 10px;
 }
+ 
+// p {
+//   font-family: 'Abril Fatface',garamond,serif;
+//   font-size:35px;
+//   font-style:bold;
+// }
+
+h3 {
+  font-size: 28px;
+  text-align: center;
+  background: #91A764;
+  display: inline-block;
+  padding: 8px 32px;
+  margin: 0 auto 16px auto;
+  border: 2px solid black;
+}
 
 .about {
   //position
@@ -74,4 +90,14 @@
     img {
         margin-bottom: 32px;
     }
+}
+
+.pod-img {
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+}
+
+.navitem {
+    float: left;
 }
