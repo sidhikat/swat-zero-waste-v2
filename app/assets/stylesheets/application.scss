@@ -126,3 +126,19 @@
     //prevents horizontal scrolling
     overflow-x: hidden;
   }
+
+  .toggle.btn {
+    background-color: #91A764;
+    border-radius: 0;
+    border: 2px solid black;
+
+    &:hover, &:active {
+      background-color: #C5CEB4;
+      border-color: black;
+      background-image: none;
+    }
+
+    .active {
+      background-color: #C5CEB4;
+    }
+  }
