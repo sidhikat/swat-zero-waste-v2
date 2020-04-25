@@ -1,0 +1,147 @@
+apt-get install nginx postgresql libpq-dev zlib1g-dev nodejs
+
+For app code:
+mkdir /var/www/szw
+
+For gem installs:
+mkdir /var/www/szw-gems
+
+
+System group for szw:
+addgroup szw
+
+To add user to group:
+usermod -a -G szw <username>
+
+
+
+Set up DB:
+
+sudo -u postgres -i
+createuser szw
+createdb szw_db
+psql:
+----
+alter role szw with password '<password>';
+grant all privileges on database szw_db to szw;
+----
+
+
+
+export GEM_HOME=/var/www/szw-gems/ruby/2.5.0/ GEM_PATH=/var/www/szw-gems/ruby/2.5.0/gems/
+gem install -i /var/www/szw-gems/ruby/2.5.0 bundler
+/var/www/szw-gems/ruby/2.5.0/bin/bundle install --binstubs --path /var/www/szw-gems/
+
+
+To run puma:
+/var/www/szw-gems/ruby/2.5.0/bin/puma
+
+
+set environment variables:
+RAIL_ENV=production
+SECRET_KEY_BASE=...
+SZW_DB_PW=...
+(See: https://til.hashrocket.com/posts/8b8b4d00a3-generate-a-rails-secret-key)
+
+
+Set up DB tables:
+/var/www/szw-gems/ruby/2.5.0/bin/rake db:migrate db:seed
+/var/www/szw-gems/ruby/2.5.0/bin/rake assets:precompile
+
+
+Set up shared directories that we can all access:
+
+cd /var/www
+mkdir szw
+chmod 2775 szw   (set gid)
+setfacl -R -d -m group:szw:rwX,other:rX szw  (set default ACL for new files)
+setfacl -R -m group:szw:rwX,other:rX szw     (set ACL for any existing files)
+
+(for existing szw-gems directory)
+chmod -R u=rwX,g=rwX,o=rX,g+s szw-gems
+chown -R kwebb:szw szw-gems/*
+
+
+systemd service:
+----
+[Unit]
+Description=SZW puma service
+After=network.target
+
+[Service]
+User=www-data
+EnvironmentFile=/etc/szw_secrets
+WorkingDirectory=/var/www/szw/swat-zero-waste-v2
+ExecStart=/var/www/szw-gems/ruby/2.5.0/bin/puma -b tcp://127.0.0.1:8000
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+----
+systemctl daemon-reload
+systemctl enable szw
+
+service szw <start,stop,restart,status>
+
+
+nginx config:
+----
+server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+
+	root /var/www/szw/swat-zero-waste-v2/public;
+	server_name _;
+
+	location ~* ^.+.(html|jpg|JPG|jpeg|svg|css|png|PNG|ico|txt|js|gz|gif|eot|woff|woff2|ttf)$ {
+		expires 1d;
+		access_log off;
+	}
+
+	location / {
+		proxy_pass      http://127.0.0.1:8000;
+		proxy_redirect  off;
+
+		proxy_set_header        Host                    $host;
+		proxy_set_header        X-Real-IP               $remote_addr;
+		proxy_set_header        X-Forwarded-For         $proxy_add_x_forwarded_for;
+		proxy_set_header        X-Forwarded-Proto       $scheme;
+	}
+}
+----
+
+
+visudo:
+# Allow members of the szw group to start / stop / restart puma.
+%szw   ALL=NOPASSWD:   /usr/sbin/service nginx start
+%szw   ALL=NOPASSWD:   /usr/sbin/service nginx restart
+%szw   ALL=NOPASSWD:   /usr/sbin/service nginx stop
+%szw   ALL=NOPASSWD:   /usr/sbin/service nginx status
+%szw   ALL=NOPASSWD:   /usr/sbin/service szw start
+%szw   ALL=NOPASSWD:   /usr/sbin/service szw restart
+%szw   ALL=NOPASSWD:   /usr/sbin/service szw stop
+%szw   ALL=NOPASSWD:   /usr/sbin/service szw status
+
+
+Deployment overview:
+-Log in via ssh and change password
+-Develop and test your changes locally first
+-When ready to make them live, push to the GitHub repo
+-On the VM (szw.cs):
+cd /var/www/szw/swat-zero-waste-v2
+git pull
+/var/www/szw-gems/ruby/2.5.0/bin/rake assets:precompile
+sudo /usr/sbin/service szw restart
+
+
+You can start/stop/restart the puma service with one of:
+
+sudo /usr/sbin/service szw start
+sudo /usr/sbin/service szw stop
+sudo /usr/sbin/service szw restart
+
+You can also get status info (whether it's running or not, and if not, why it failed to start) with the 'status' command:
+
+sudo /usr/sbin/service szw status
+
+I don't think you'll need it, but you can execute the same commands on the nginx service too, which controls the main webserver.  That one shouldn't affect the page content though -- it just routes requests to puma.
