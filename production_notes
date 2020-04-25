@@ -130,6 +130,7 @@ Deployment overview:
 -On the VM (szw.cs):
 cd /var/www/szw/swat-zero-waste-v2
 git pull
+export GEM_HOME=/var/www/szw-gems/ruby/2.5.0/ GEM_PATH=/var/www/szw-gems/ruby/2.5.0/gems/
 /var/www/szw-gems/ruby/2.5.0/bin/rake assets:precompile
 sudo /usr/sbin/service szw restart
 
