@@ -120,7 +120,8 @@
 
   //background picture
   body{
-    background-image: url("background.png");
+    //background-image: url("background.png");
+    background-image: url(image-path('background.png'));
     background-size: 100% auto;
     background-position: center top;
     background-attachment: fixed;
