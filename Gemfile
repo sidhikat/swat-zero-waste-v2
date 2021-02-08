@@ -39,7 +39,7 @@ gem 'jquery-rails'
 gem 'rack-cors', require: 'rack/cors'
 
 #Use carrierwave; also for file uploads
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
